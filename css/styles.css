@@ -1,0 +1,119 @@
+/* 
+Project Name: Orchard - Test
+Client: Orchard
+Author: Eugene Lai | @siunegu | siunegu.github.io
+Developer @GA in SYD
+*/
+
+/* General Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body, html { font-size: 100%; 	padding: 0; margin: 0; }
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* General */
+html {	
+	background-color: #fdfaf1;
+}
+
+/* Typography */
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 100%;
+}
+
+/* Containers */
+#wrap {
+	overflow-x: hidden !important;
+	height: 100%;
+	position: relative;
+}
+
+.container {
+	position: relative;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.content {
+	padding: 3em;
+}
+
+.pull-left {
+	position: absolute;
+	left: 0;
+}
+
+.pull-right {
+	position: absolute;
+	right: 0;
+}
+
+
+/* Accordian */
+a .accordian-button {
+	display: inline;
+	background-color: brown;
+	width: 1em;
+	height: 1em;
+}
+
+/* Header */
+header {
+	padding: 0.5rem 0;
+	background-color: #EADAC0;	
+	z-index: 999;
+}
+
+/* Nav */
+nav {
+	width: 100%;
+	padding: 0.3em 0;	
+	height: 4em;
+	color: #FFF;
+	background-color: #275d2c;
+	z-index: 998;
+	border-bottom: 0.3em solid #90ab66;
+}
+
+nav a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul,li {	
+	padding: 0;
+	display: inline-block;
+}
+
+nav .pull-right li {
+	padding-left: 1.5em;
+}
+
+nav .pull-left li {
+	padding: 0 0.5em;
+}
+
+
