@@ -19,10 +19,20 @@ $(document).ready(function() {
 					classie.toggle( showLeftPush, 'disabled' );
 				}
 			}
+
 		// Tree Menu
-			// $('.accordian').click(function(){
-				
-			// 	$(this).find('ul').slideToggle();
-			// }); 
-		 $('#jstree_demo_div').jstree();
+			// First Level Menu
+			$('.accordian > ul').hide();
+			$('.plus-minus-toggle').click(function(){		
+				// $(this).parent().parent().find('.accordian-first').slideToggle('fast');
+				// $(this).parent().parent().find('.accordian-first li:first-child').slideToggle('fast');
+				$(this).parent().parent().find('ul').slideToggle('fast');
+			}); 
+			// Second Level Menu							
+			$('.accordian-first .plus-minus-toggle').click(function(){
+				debugger;
+				$(this).parent().siblings().hide();
+				// $('.accordian-first li').find('').hide();
+				$(this).parent().parent().children().slideToggle('fast');
+			});
 });			
