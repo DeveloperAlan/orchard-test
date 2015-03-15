@@ -6,7 +6,7 @@ Developer @GA in SYD
 */
 
 /* General Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300,600);
 
 body, html { font-size: 100%; 	padding: 0; margin: 0; }
 
@@ -35,7 +35,30 @@ html {
 	background-color: #fdfaf1;
 }
 
+/* Table */
+table {
+	display: block;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #DDD;
+}
+
+th {
+	padding: 15px;
+	border-right: 1px solid #DDD;
+	text-align: left;
+}
+
+td {
+	padding: 15px;
+}
+
 /* Typography */
+h1, h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;	
+}
+
 a {
 	text-decoration: none;
 }
@@ -69,14 +92,52 @@ p {
 .pull-right {
 	position: absolute;
 	right: 0;
+  padding: 0.4em 0 0.6em;
 }
 
+.column-5 {
+	margin-top: 2em;
+  width: 50%;
+  display: inline-block;	
+}
 
-/* Accordian */
-a .accordian-button {
-	display: inline;
-	width: 1em;
-	height: 1em;
+.column-5 h1 {
+	margin: 0.1em 0;
+}
+
+.website-info {
+	background-color: #fff;
+	padding: 5px 25px 25px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.website-info button {
+  background: #275d2c;
+  color: #FFF;
+  border: 1px solid #275d2c;
+  border-radius: 4px;
+  padding: 0.5em 0.6em 0.3em;
+  float: right;
+  position: relative;
+  top: 5px;
+}
+
+.website-info-content {
+	margin: 1em 0;
+	border: 1px solid #ddd;
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+
+.website-info-content h3 {
+	padding: 0.5em 0.6em 0.2em;
+	background-color: #dac9ab;
+	margin: 0;
+}
+
+.website-info-content h3:last-child {
+	background-color: #fff;
 }
 
 /* Header */
@@ -115,4 +176,14 @@ nav .pull-left li {
 	padding: 0 0.5em;
 }
 
-
+/* Buttons */
+.column-5 button {
+  background: #275d2c;
+  color: #FFF;
+  border: 1px solid #275d2c;
+  border-radius: 4px;
+  padding: 0.5em 0.6em 0.3em;
+  float: right;
+  position: relative;
+  top: 5px;
+}
