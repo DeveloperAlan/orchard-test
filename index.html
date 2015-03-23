@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="Orchard, Digital, Marketing, Design">
 	<title>Orchard Front End Test</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 </head>
 <body>
 
@@ -22,8 +22,8 @@
 			<div class="pull-left">
 				<ul>
 					<li><a href="#" id="showLeftPush">&#9776;</a></li>  
-					<li><a href="#">Merisant</a></li> > 
-					<li><a href="#">Equal - APAC</a></li> >
+					<li><a href="#">Merisant</a> > </li>  
+					<li><a href="#">Equal - APAC</a> > </li> 
 					<li>Design</li>
 				</ul>
 			</div>
@@ -36,12 +36,33 @@
 			</div>
 		</div>
 	</nav>
-	
-	<div class="container cbp-spmenu-push" id="main-content">
-		<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-			<br>
+
+<!-- 	<div class="container cbp-spmenu-push" id="main-content"> -->
+<!-- 		<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1"> -->
+	<div class="left-hand-menu">
+	<div id="selector">
+  <ul>
+    <li><a>Team A's Projects</a>
+      <ul>
+    <li><a>Iteration 1</a>
+          <ul>
+            <li><a>Story A</a></li>
+            <li><a>Story B</a></li>
+            <li><a>Story C</a></li>
+          </ul>
+        </li>
+    <li><a>Iteration 2</a>
+          <ul>
+        <li><a>Story D</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- 			<br>
 			<ul id="items">
-				<li><a href="#"><span class="plus-minus-toggle"><i class="fa fa-square-o"></i></span> AMC</a></li>
+				<li><a href="#"><span class="plus-minus-toggle"></span> AMC</a></li>
 				<li class="accordian">
 				<a href="#"><span class="plus-minus-toggle"><i class="fa fa-plus-square-o"></i></span> Beiersdorf </a>
 						<ul>
@@ -60,7 +81,7 @@
 				<li><a href="#"><span class="plus-minus-toggle"><i class="fa fa-square-o"></i></span> Electrolux</a></li>
 				<li><a href="#"><span class="plus-minus-toggle"><i class="fa fa-square-o"></i></span> Fox</a></li>
 				<li><a href="#"><span class="plus-minus-toggle"><i class="fa fa-square-o"></i></span> Galderma</a></li>
-			</ul>
+			</ul> -->
 		</div>	
 		<div id="content">
 			<div class="column-5"><h1>Design</h1></div><div class="column-5"><button>Edit</button></div>
@@ -70,7 +91,7 @@
 			</p>
 
 			<h3>Version Control</h3>
-			<table>
+			<table class="table-version-control">
 			  <tr>
 			    <th>Repository Location</th>
 			    <td>http://your.repo.location</td>

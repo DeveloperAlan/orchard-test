@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 p {
@@ -90,11 +90,15 @@ p {
 	margin: 0.1em 0;
 }
 
+.table-version-control {
+  background-color: #fff;
+}
+
 .website-info {
 	background-color: #fff;
 	padding: 5px 25px 25px;
 	border: 1px solid #ddd;
-	border-radius: 4px;
+	border-radius: 20px;
 }
 
 .website-info button {
@@ -146,6 +150,10 @@ nav a {
 	color: #FFF;
 }
 
+.tree-choice {
+  padding: 10px;
+}
+
 nav ul,li {	
 	padding: 0;
 	display: inline-block;
@@ -160,6 +168,13 @@ nav ul,li {
   float: right;
   position: relative;
   top: 5px;
+}
+
+.left-hand-menu {
+  float: left;
+  width: 200px;
+  height: 100em;
+  background-color: red;
 }
 
 #showLeftPush {
