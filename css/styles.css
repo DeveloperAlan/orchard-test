@@ -57,6 +57,7 @@ p {
 	overflow-x: hidden !important;
 	height: 100%;
 	position: relative;
+  width: 100%;
 }
 
 .container {
@@ -65,33 +66,45 @@ p {
 	margin: 0 auto;
 }
 
-.content {
-	padding: 3em;
+#content {
+  width: 70vw;
+	padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 10px;
+  float: right;
 }
 
-.pull-left {
-	position: absolute;
-	left: 0;
+.title {
+  display: inline-block;
+  width: 100%;	
+  height: 50px;
 }
 
-.pull-right {
-	position: absolute;
-	right: 0;
-  padding: 0.4em 0 0.6em;
+.title h1 {
+  float: left;
 }
 
-.column-5 {
-	margin-top: 2em;
-  width: 50%;
-  display: inline-block;	
-}
-
-.column-5 h1 {
-	margin: 0.1em 0;
+.title button {
+  background: #275d2c;
+  color: #FFF;
+  border: 1px solid #275d2c;
+  border-radius: 4px;
+  padding: 1em 1em 1em;
+  float: right;
+  position: relative;
+  top: 5px;
 }
 
 .table-version-control {
   background-color: #fff;
+}
+
+.table-version-control tr td {
+  width: 100%;
+}
+
+.table-version-control tr:nth-child(even){
+  background-color: #F2F0F1;
 }
 
 .website-info {
@@ -138,11 +151,9 @@ header {
 /* Nav */
 nav {
 	width: 100%;
-	padding: 0.3em 0;	
-	height: 4em;
+	height: 3em;
 	color: #FFF;
 	background-color: #275d2c;
-	z-index: 998;
 	border-bottom: 0.3em solid #90ab66;
 }
 
@@ -150,30 +161,40 @@ nav a {
 	color: #FFF;
 }
 
-.tree-choice {
-  padding: 10px;
+.nav-left {
+  position: relative;
+  float: left;}
+
+.nav-right {
+  float: right;
+  position: relative;
 }
 
+
 nav ul,li {	
-	padding: 0;
 	display: inline-block;
 }
 
-.column-5 button {
-  background: #275d2c;
-  color: #FFF;
-  border: 1px solid #275d2c;
-  border-radius: 4px;
-  padding: 0.5em 0.6em 0.3em;
-  float: right;
-  position: relative;
-  top: 5px;
+
+#selector {
+  float: left;
+  width: 25vw;
+  height: 85vh;
+  background-color: #D0BE9B;
+  padding-right: 50px;
 }
 
-.left-hand-menu {
-  float: left;
-  width: 200px;
-  height: 100em;
-  background-color: red;
+#selector ul {
+  padding-top: 20px;
+}
+
+#selector ul li {
+  padding: 10px;
+  width: 100%;
+}
+
+#selector ul li a { 
+  color: grey;
+  text-decoration: none;
 }
 
