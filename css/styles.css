@@ -1,16 +1,10 @@
-/* 
-Project Name: Orchard - Test
-Client: Orchard
-Author: Eugene Lai | @siunegu | siunegu.github.io
-Developer @GA in SYD
-*/
+body, html { 
+  font-size: 100%;
+  padding: 0; 
+  margin: 0; 
+  background-color: #fdfaf1;
+}
 
-/* General Style */
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300,600);
-
-body, html { font-size: 100%; 	padding: 0; margin: 0; }
-
-/* Reset */
 *,
 *:after,
 *:before {
@@ -19,7 +13,6 @@ body, html { font-size: 100%; 	padding: 0; margin: 0; }
 	box-sizing: border-box;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
 	content: " ";
@@ -30,12 +23,6 @@ body, html { font-size: 100%; 	padding: 0; margin: 0; }
 	clear: both;
 }
 
-/* General */
-html {	
-	background-color: #fdfaf1;
-}
-
-/* Table */
 table {
 	display: block;
 	background-color: #fff;
@@ -53,7 +40,6 @@ td {
 	padding: 15px;
 }
 
-/* Typography */
 h1, h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;	
@@ -67,7 +53,6 @@ p {
 	font-size: 100%;
 }
 
-/* Containers */
 #wrap {
 	overflow-x: hidden !important;
 	height: 100%;
@@ -140,7 +125,6 @@ p {
 	background-color: #fff;
 }
 
-/* Header */
 header {
 	padding: 0.5rem 0;
 	background-color: #EADAC0;	
@@ -167,8 +151,6 @@ nav ul,li {
 	display: inline-block;
 }
 
-
-/* Buttons */
 .column-5 button {
   background: #275d2c;
   color: #FFF;
@@ -179,8 +161,6 @@ nav ul,li {
   position: relative;
   top: 5px;
 }
-
-/* General styles for all menus */
 
 #showLeftPush {
   color: #FFF;
@@ -201,8 +181,6 @@ nav ul,li {
   font-weight: 300;
 }
 
-/* Orientation-dependent styles for the content of the menu */
-
 .cbp-spmenu-vertical {
   width: 300px;
   height: 100%;
@@ -218,7 +196,6 @@ nav ul,li {
   width: 100%;
   height: 150px;
   left: 0;
-  /*z-index: 1000;*/
   overflow: hidden;
 }
 
@@ -235,8 +212,6 @@ nav ul,li {
   border-left: 1px solid #258ecd;
 }
 
-/* Push classes applied to the body */
-
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
@@ -250,8 +225,6 @@ nav ul,li {
 .cbp-spmenu-push-toleft {
   left: -300px;
 }
-
-/* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
   left: -300px;
@@ -280,7 +253,6 @@ nav ul,li {
   padding-top: 1em;
 }
 
-/* Transitions */
 
 .cbp-spmenu,
 .cbp-spmenu-push {
@@ -288,8 +260,6 @@ nav ul,li {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-/* media queries */
 
 @media screen and (max-width: 55.1875em){
 
